@@ -1,0 +1,7 @@
+CREATE EXTENSION IF NOT EXISTS postgis;
+
+CREATE TABLE features (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR,
+    geom GEOMETRY(POINT, 4326)
+);
