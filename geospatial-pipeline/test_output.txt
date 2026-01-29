@@ -1,0 +1,23 @@
+Clearing positions...
+time="2026-01-29T23:11:10Z" level=warning msg="/workspaces/codespaces-blank/geospatial-pipeline/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+TRUNCATE TABLE
+Running Test case 1...
+Status: 201
+Body: {"id":3,"asset_id":"TEST-001","timestamp":"2025-01-13T15:00:00Z","region_crossings":[]}
+Test case 1 PASSED
+
+Running Test case 2...
+Status: 201
+Body: {"id":5,"asset_id":"CROSSING-TEST","timestamp":"2025-01-13T15:30:00Z","region_crossings":[{"region_id":1,"region_name":"Chesapeake Bay","crossing_type":"ENTRY"}]}
+Test case 2 PASSED
+
+Running Test case 3...
+Status: 200
+Body: {"count":0,"positions":[]}
+Test case 3 PASSED
+
+Running Test case 4...
+Status: 200
+Body: {"asset_id":"VESSEL-7721","asset_type":"VESSEL","point_count":1,"track":{"type":"LineString","coordinates":[[-75.0,39.0]]}}
+Test case 4 PASSED
+
